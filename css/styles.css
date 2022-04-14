@@ -224,7 +224,12 @@ ol {
 .section {
   padding: 94px 0;
 }
-.features-tumb {
+.features {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
+.features__tumb {
   background: #f5f4fa;
   display: flex;
   height: 120px;
@@ -232,7 +237,23 @@ ol {
   justify-content: center;
 
   margin-bottom: 30px;
-  /* outline: 1px solid tomato; */
+  
+}
+.features__item {
+  width: 270px;
+  margin-right: 30px;
+}
+
+.features__item:last-child {
+  margin: 0;
+}
+
+.features__text {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-txt-cl);
 }
 
 .features-title {
@@ -242,31 +263,12 @@ ol {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
   color: var(--primary-txt-cl);
 }
-.features-text {
-  font-family: var(--main-font);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--secondary-txt-cl);
-}
 
-.features-list {
-  display: flex;
-  align-items: center;
-  padding-left: 0;
-}
-.features-item {
-  width: 270px;
-  margin-right: 30px;
-}
-.features-item:last-child {
-  margin: 0;
-}
-.features-title {
-  margin-bottom: 10px;
-}
+
+
 
 /* Чем мы занимаемся */
 .occupation {
@@ -646,8 +648,16 @@ input .footer-imput::placeholder{
 /* Наши работы */
 
 .visually-hidden {
-  position: fixed;
-  transform: scale(0);
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .work-list {
