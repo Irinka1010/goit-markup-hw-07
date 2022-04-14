@@ -256,7 +256,7 @@ ol {
   color: var(--secondary-txt-cl);
 }
 
-.features-title {
+.subtitle{
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 14px;
@@ -286,7 +286,7 @@ ol {
 .section-title {
   margin-bottom: 50px;
 }
-.occupation-thumb {
+.occupation__thumb {
   position: relative;
 }
 img {
@@ -295,23 +295,25 @@ img {
   height: auto;
 }
 
-.occupation-list {
+.occupation__list {
   display: flex;
   padding: 0px;
 }
-.occupation-item {
+.occupation__item {
   margin-right: 30px;
   flex-basis: calc((100% - 60px) / 3);
 }
-.occupation-item:last-child {
+.occupation__item:last-child {
   margin: 0;
 }
-.light-title {
+.subtitle--mode-dark {
   color: var(--primary-dark-txt);
+  }
+.occupation-title{
   margin: 0;
 }
 
-.occupation-title {
+.occupation__title {
   position: absolute;
   left: 0;
   bottom: 0;
