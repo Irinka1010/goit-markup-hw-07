@@ -455,6 +455,10 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
 .footer-logo {
   display: block;
   padding-bottom: 0px;
@@ -463,6 +467,10 @@ img {
   margin-bottom: 20px;
 
   color: var(--primary-dark-txt);
+}
+/* Адрес */
+.address {
+  font-style: normal;
 }
 .address__list {
   padding: 0;
@@ -473,19 +481,19 @@ img {
 .address__item:last-child {
   margin-bottom: 0;
 }
-.footer__email,
-.footer__email:hover,
-.footer__email:focus,
-.footer__phone,
-.footer__phone:hover,
-.footer__phone:focus {
+.address__email,
+.address__email:hover,
+.address__email:focus,
+.address__phone,
+.address__phone:hover,
+.address__phone:focus {
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-address-link {
+.address__link{
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.71;
@@ -493,45 +501,44 @@ img {
   color: var(--primary-dark-txt);
   font-style: normal;
 }
-.address {
-  font-style: normal;
-}
-.footer__container {
-  display: flex;
-  align-items: baseline;
-}
-.footer-socials-list {
+
+
+/* .footer-socials-list {
   justify-content: space-between;
   margin-top: 0;
-}
+} */
+/* Социальные сети */
 
-.footer-socials {
+.footer__socials {
   margin-left: 70px;
 }
 .footer-title {
   color: var(--primary-dark-txt);
   margin-bottom: 20px;
 }
-.footer-socials__link {
+.socials__link--dark {
   background: rgba(255, 255, 255, 0.1);
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-icon {
+.socials__icon--dark{
   fill: var(--primary-dark-txt);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-form{
+
+/* Форма футера */
+
+.footer__form{
   margin-left: auto;
  
 }
-.footer-label{
+.footer__label{
   display: flex;
 }
-.label-email{
+.footer__email{
   margin-right: 12px;
 }
-.footer-imput{
+.footer__imput{
   display: inline-block;
   width: 358px;
   height: 50px;
@@ -545,8 +552,7 @@ img {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: var(--primary-dark-txt);
-  
- 
+   
   padding-top: 15px;
   padding-left: 16px;
   padding-bottom: 15px;
@@ -555,7 +561,7 @@ input .footer-imput::placeholder{
   color: rgba(255, 255, 255, 0.6); 
     
 }
-.footer-imput:focus{
+.footer__imput:focus{
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .footer-submit{
