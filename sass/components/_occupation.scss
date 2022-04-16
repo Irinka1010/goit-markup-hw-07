@@ -1,0 +1,49 @@
+.occupation {
+    padding-top: 0;
+}
+
+.occupation__thumb {
+    position: relative;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.occupation__list {
+    display: flex;
+    padding: 0px;
+}
+
+.occupation__item {
+    margin-right: 30px;
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.occupation__item:last-child {
+    margin: 0;
+}
+
+.subtitle--mode-dark {
+    color: var(--primary-dark-txt);
+}
+
+.occupation-title {
+    margin: 0;
+}
+
+.occupation__title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(47, 48, 58, 0.8);
+}
