@@ -3,12 +3,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
 .footer__container {
     display: flex;
     align-items: baseline;
 }
-
 .footer-logo {
     display: block;
     padding-bottom: 0px;
@@ -21,7 +19,6 @@
 .footer__socials {
     margin-left: 70px;
 }
-
 .footer-title {
     color: var(--primary-dark-txt);
     margin-bottom: 20px;
@@ -57,17 +54,16 @@
     padding-top: 15px;
     padding-left: 16px;
     padding-bottom: 15px;
+
+    &:focus {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
 }
 
 input .footer-imput::placeholder {
     color: rgba(255, 255, 255, 0.6);
 
 }
-
-.footer__imput:focus {
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
 .footer-submit {
     max-width: 350px;
     min-width: 200px;
@@ -75,7 +71,6 @@ input .footer-imput::placeholder {
     justify-content: center;
     align-items: center;
     border: none;
-
 
     background: var(--accent-txt-cl);
 
@@ -89,11 +84,9 @@ input .footer-imput::placeholder {
     letter-spacing: 0.06em;
     color: var(--primary-dark-txt)
 }
-
 .footer-submit-icon {
     fill: var(--primary-dark-txt);
 }
-
 .submit-text {
     margin-right: 10px;
 }
