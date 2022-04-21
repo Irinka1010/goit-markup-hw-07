@@ -5,9 +5,30 @@
     &__container {
         display: flex;
     }
+        
 
-    &__email,
-    &__phone {
+}
+
+.сontacts {
+    display: flex;
+    padding-left: 0;
+    margin-left: auto;
+
+    &__item {
+        margin-right: 50px;
+        
+
+    }
+
+    &__link {
+        color: var(--secondary-txt-cl);
+        display: flex;
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        
+
+
         font-family: var(--main-font);
         font-weight: 500;
         font-size: 14px;
@@ -15,6 +36,7 @@
         letter-spacing: 0.02em;
         color: var(--primary-txt-cl);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
     }
 
     &__icon {
@@ -23,61 +45,18 @@
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &__email:hover,
-    &__email:focus,
-    &__phone:hover,
-    &__phone:focus {
+    &__link:hover,
+    &__link:focus {
         color: var(--accent-txt-cl);
     }
 
-    &__email,
-    &__phone {
-        color: var(--secondary-txt-cl);
-        display: flex;
-        align-items: center;
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
-
-    &__list {
-        display: flex;
-        padding-left: 0;
-        margin-left: auto;
-    }
-    
-    &__item {
-        margin-right: 50px;
+    &__link:hover  &__icon,
+    &__link:focus &__icon {
+        fill: var(--accent-txt-cl);
     }
 
 }
 
-.header__email:hover .header__icon,
-.header__email:focus .header__icon,
-.header__phone:hover .header__icon,
-.header__phone:focus .header__icon {
-    fill: var(--accent-txt-cl);
-}
-
-.header__item:last-child {
+.сontacts__item:last-child {
     margin: 0;
-}
-
-.curent {
-    position: relative;
-}
-
-.link-portfolio {
-    position: relative;
-}
-
-.curent::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    background: var(--accent-txt-cl);
-    border-radius: 2px;
 }
