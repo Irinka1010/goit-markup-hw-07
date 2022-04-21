@@ -8,11 +8,13 @@
 .clients__item {
     width: 170px;
     height: 92px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.clients__item:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 .clients__link {
     display: flex;
@@ -30,14 +32,16 @@
     }
 
 
-    &:hover .clients__icon,
-    &:focus .clients__icon {
-    fill: var(--accent-txt-cl);
-    }
+   
 }
 
 .clients__icon {
     fill: #afb1b8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .clients__link:hover &,
+    .clients__link:focus & {
+        fill: var(--accent-txt-cl);
+    }
 }
 

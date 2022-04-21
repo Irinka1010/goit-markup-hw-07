@@ -26,7 +26,7 @@ body {
 .section {
     padding: 94px 0;
 }
-.section-title {
+.section__title {
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 36px;
@@ -34,8 +34,9 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-txt-cl);
-}
-
-.section-title {
     margin-bottom: 50px;
 }
+.section--no-padding-top {
+    padding-top: 0;
+}
+

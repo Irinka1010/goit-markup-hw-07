@@ -8,11 +8,13 @@
 
 .address__item {
     margin-bottom: 9px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
-.address__item:last-child {
-    margin-bottom: 0;
-}
+
 
 .address__email,
 .address__email:hover,
