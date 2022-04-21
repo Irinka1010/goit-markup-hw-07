@@ -652,7 +652,7 @@ input .footer-imput::placeholder {
   border-radius: 4px;
 }
 
-.work__list {
+.work {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
